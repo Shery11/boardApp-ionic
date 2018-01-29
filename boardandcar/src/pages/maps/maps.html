@@ -1,0 +1,20 @@
+<ion-header no-border>
+  <ion-navbar  transparent>
+    <ion-title>
+        {{newsData?.title?.rendered}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>{{ 'SPOTS' | translate }}</ion-label>
+      <ion-select [(ngModel)]="spot" interface="popover" #C (ionChange)="onChange(C.value)">
+        <ion-option  *ngFor="let item of spots;" value="{{item.id}}"> {{item.name}} </ion-option> 
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <div id="map"></div>
+  <div id="dataContent" #dataContainer></div>  
+</ion-content>

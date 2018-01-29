@@ -1,0 +1,28 @@
+<ion-header no-border>
+  <ion-navbar  transparent>
+    <ion-title>
+        {{newsData?.title?.rendered}} {{ params }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen >
+  <!--p [innerHTML]="newsData?.content.rendered"> </p!-->
+  <div padding>
+    <div  id="dataContent" #dataContainer></div>
+    <div *ngFor="let house of houses">
+      <ion-slides pager >
+        <ion-slide  *ngFor="let slide of house[0]">
+          <img style="width: 100% !important;" [src]="slide" class="slide-image"/>
+        </ion-slide>
+      </ion-slides>
+      <p [innerHTML]="sanitizer.bypassSecurityTrustHtml(house[1])"></p>
+    </div>
+  </div>
+  <div *ngFor="let url of urls">
+    <iframe id="meteoframe" [src]="sanitizer.bypassSecurityTrustResourceUrl(url)"  webkitallowfullscreen mozallowfullscreen allowfullscreen width="940" height="400" frameborder="0">
+    </iframe>
+  </div>
+
+
+</ion-content>

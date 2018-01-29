@@ -1,0 +1,94 @@
+page-sports {
+
+	 .slide-zoom {
+      height: 100%;
+    }
+    .slider {
+      height: 100vh;
+    }
+    .slider-slide
+    {
+      text-align: center;  
+    }
+    .slide-title {
+      margin-top: 2.8rem;
+      position: absolute;
+      top: 40%;
+      font-family: CenturyGothic_Regular !important;
+      font-size: 3.8rem;
+      
+      color: white;    
+      text-shadow: 1px 1px 1px grey;
+      letter-spacing: 1px;
+      position: absolute;  
+      bottom: 0;  
+      left: 0;  
+      right: 0;  
+      margin: auto;
+    }
+  
+    .slide-image {
+      max-height: 100%;
+      max-width: 100%;
+      margin: 0px;
+      width: 100%
+    }
+  
+    b {
+      font-weight: 500;
+    }
+  
+    p {
+      padding: 0 40px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #60646B;
+  
+      b {
+        color: #000000;
+      }
+    }
+
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+      top: 100px !important;
+    }
+    .swiper-pagination-bullet {
+      background: #fff !important;
+      opacity: 1 !important;
+      position: relative;
+      }
+
+    .swiper-pagination-bullet-active:before 
+    {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: -5px;
+      left: -5px;
+      right: 0px;
+      bottom: 0px;
+      padding: 7px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+    }
+    .findMore{
+      position: absolute;
+      bottom: 35px;
+      left: 40px;
+      color: white;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      height: 30px;
+    }
+  
+    ion-content{
+      margin-top: 0px !important;
+    }
+    .scroll-content {
+      margin-top: 0px !important;
+      padding-top: 0px !important;
+    }
+    
+
+}

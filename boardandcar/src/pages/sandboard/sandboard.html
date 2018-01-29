@@ -1,0 +1,24 @@
+<ion-header no-border>
+  <ion-navbar  transparent>
+    <!-- <button style="background-color:  transparent;float: right;" ion-button icon-only (click)="presentPopover($event)"  end>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title>
+      
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen class="home-page">
+  <ion-slides pager>
+     <ion-slide>
+      <img src="assets/img/homeSlides/merzouga.png" class="slide-image"/>
+      <h2 class="slide-title">MERZOUGA</h2>
+      <button (click)="itemTapped($event, 'MERZOUGA')" class="findMore" ion-button style="background-color: #09a7ac;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+    
+  </ion-content>

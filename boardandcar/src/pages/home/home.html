@@ -1,0 +1,58 @@
+<ion-header no-border>
+  <ion-navbar  transparent>
+    <!-- <button style="background-color:  transparent;float: right;" ion-button icon-only (click)="presentPopover($event)"  end>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title>
+      
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen class="home-page">
+  <ion-slides pager>
+    <ion-slide >
+      <img src="assets/img/homeSlides/taghazout-home.png" class="slide-image"/>
+      <h2 class="slide-title">TAGHAZOUT</h2>
+      <button  (click)="itemTapped($event, 'TAGHAZOUT')" class="findMore" ion-button style="background-color: #297eb9;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+    <ion-slide >
+      <img src="assets/img/homeSlides/essaouira-home.png" class="slide-image"/>
+      <h2 class="slide-title">ESSAOUIRA</h2>
+      <button (click)="itemTapped($event, 'ESSAOUIRA')" class="findMore" ion-button style="background-color: #ee9525;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+    <ion-slide >
+      <img src="assets/img/homeSlides/imsouane-home.png" class="slide-image"/>
+      <h2 class="slide-title">IMSOUANE</h2>
+      <button (click)="itemTapped($event, 'IMSOUANE')" class="findMore" ion-button style="background-color: #09a7ac;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+    <ion-slide >
+      <img src="assets/img/homeSlides/agadir-home.png" class="slide-image"/>
+      <h2 class="slide-title">AGADIR</h2>
+      <button (click)="itemTapped($event, 'AGADIR')" class="findMore" ion-button style="background-color: #297eb9;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/homeSlides/ifni-home.png" class="slide-image"/>
+      <h2 class="slide-title">IFNI</h2>
+      <button (click)="itemTapped($event, 'IFNI')" class="findMore" ion-button style="background-color: #09a7ac;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+  
+
+  </ion-slides>
+    
+  </ion-content>

@@ -1,0 +1,9 @@
+"C:\Program Files\Java\jre1.8.0_144\bin\keytool.exe" -genkey -v -keystore boardandcar-release-key.jks -keyalg RSA -keysize 2048 -validity 20000 -alias boardandcar
+password : boardandcar
+alias : boardandcar
+
+"C:\Program Files\Java\jdk1.8.0_60\bin\jarsigner.exe" -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore boardandcar-release-key.jks android-release-unsigned.apk boardandcar
+
+"C:\Users\ADMIN\AppData\Local\Android\sdk\build-tools\25.0.3\zipalign.exe" -v 4 android-release-unsigned.apk android-release-signed.apk
+
+"C:\Users\ADMIN\AppData\Local\Android\sdk\build-tools\25.0.3\apksigner.bat" verify android-release-signed.apk

@@ -1,0 +1,38 @@
+<ion-header no-border>
+  <ion-navbar  transparent>
+    <ion-title>
+      {{spot}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen class="menu-detail-page"> 
+         <div class="menuItem item1"  (click)="itemTapped($event, 'previsions')" >
+            <img src="assets/img/snowboard/forecast.jpg"/>
+            <button ion-button style="background-color: #162a24;right: 55px;left: inherit;" round icon-start>
+              {{ 'FORECASTS' | translate }}
+            </button>
+        </div>
+       
+        <div class="menuItem item2"  (click)="itemTapped($event, 'route')" >
+            <img src="assets/img/snowboard/road.jpg"/>
+            <button ion-button style="background-color: #188ca3;" round icon-start>
+              {{ 'ROAD' | translate }}
+            </button>
+        </div>
+
+       <div class="menuItem item3"  (click)="itemTapped($event, 'maison')" >
+            <img src="assets/img/snowboard/sleep.jpg"/>
+            <button ion-button style="background-color: #385d92;" round icon-start>
+              {{ 'SLEEP' | translate }}
+            </button>
+        </div>
+
+        <div class="menuItem item4"  (click)="itemTapped($event, 'activite')" >
+            <img src="assets/img/snowboard/discover.jpg"/>
+            <button ion-button style="background-color: #ffac4a;right: 30px;left: inherit;" round icon-start>
+              {{ 'TO DISCOVER' | translate }}
+            </button>
+        </div>
+        
+</ion-content>

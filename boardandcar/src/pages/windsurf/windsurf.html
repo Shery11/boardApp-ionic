@@ -1,0 +1,35 @@
+<ion-header no-border>
+  <ion-navbar  transparent>
+    <!-- <button style="background-color:  transparent;float: right;" ion-button icon-only (click)="presentPopover($event)"  end>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title>
+      
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen class="home-page">
+  <ion-slides pager>
+   
+
+     <ion-slide>
+      <img src="assets/img/homeSlides/dakhla.png" class="slide-image"/>
+      <h2 class="slide-title">DAKHLA</h2>
+      <button (click)="itemTapped($event, 'DAKHLA')" class="findMore" ion-button style="background-color: #09a7ac;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+     <ion-slide>
+      <img src="assets/img/homeSlides/essaoura-windsurfing.png" class="slide-image"/>
+      <h2 class="slide-title">ESSAOUIRA</h2>
+      <button (click)="itemTapped($event, 'ESSAOUIRAA')" class="findMore" ion-button style="background-color: #09a7ac;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+   
+  </ion-slides>
+    
+  </ion-content>

@@ -1,0 +1,48 @@
+<ion-header no-border>
+  <ion-navbar  transparent>
+    <button style="background-color:  transparent;float: right;" ion-button icon-only (click)="presentPopover($event)"  end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen class="home-page">
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/sports/surfing.png" class="slide-image"/>
+      <h2 class="slide-title">SURF</h2>
+      <button  (click)="itemTapped($event, 'SURF')" class="findMore" ion-button style="background-color: #297eb9;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/sports/windsurfing.png" class="slide-image"/>
+      <h2 class="slide-title">WINDSURF</h2>
+      <button (click)="itemTapped($event, 'WINDSURF')" class="findMore" ion-button style="background-color: #ee9525;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/sports/snowboarding.png" class="slide-image"/>
+      <h2 class="slide-title">SNOWBOARD</h2>
+      <button (click)="itemTapped($event, 'SNOWBOARD')" class="findMore" ion-button style="background-color: #CD0000;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/sports/sandboarding.png" class="slide-image"/>
+      <h2 class="slide-title">SANDBOARD</h2>
+      <button (click)="itemTapped($event, 'SANDBOARD')" class="findMore" ion-button style="background-color: #2F4F4F;" round icon-start>
+        {{ 'MORE' | translate }}
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+    
+  </ion-content>

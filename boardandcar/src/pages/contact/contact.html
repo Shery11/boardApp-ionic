@@ -1,0 +1,34 @@
+<ion-header no-border>
+  <ion-navbar  transparent>
+    <ion-title>
+        {{newsData?.title?.rendered}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen padding>
+    <!--div>
+      <ion-slides pager >
+    <ion-slide>
+      <img style="width: 100% !important;" src="/assets/img/a.png" class="slide-image"/>
+    </ion-slide>
+    <ion-slide>
+      <img style="width: 100% !important;" src="/assets/img/b.png" class="slide-image"/>    </ion-slide>
+  </ion-slides>
+    </div-->
+  
+  <div  id="dataContent" #dataContainer></div>
+  <div >
+    <ion-slides pager >
+      <ion-slide *ngFor="let house of houses" >
+        <!--span [innerHTML]="sanitizer.bypassSecurityTrustHtml(house[1])" style="float: left;"></span-->
+        <img *ngFor="let slide of house[0]" style="width: 100% !important;" [src]="slide" class="slide-image"/>
+        
+        <button (click)="openWithSystemBrowser(house[1])" class="findMore" ion-button style="background-color: #ee9525;float: right;height: 30px;" round icon-start>
+            {{ 'MORE' | translate }}
+          </button>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
+

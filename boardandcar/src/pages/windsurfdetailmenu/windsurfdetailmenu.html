@@ -1,0 +1,54 @@
+<ion-header no-border>
+  <ion-navbar  transparent>
+    <ion-title>
+      {{spot}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen class="menu-detail-page"> 
+        <div  class="menuItem item1" (click)="itemTapped($event, 'spot')" >
+          <img src="assets/img/windsurf/spot.jpg"/>
+          <button ion-button style="background-color: #04243f;" round icon-start>
+            {{ 'SPOTS' | translate }}
+          </button>
+        </div> 
+      
+        <div class="menuItem item2"  (click)="itemTapped($event, 'coach')" >
+            <img src="assets/img/windsurf/lessons.jpg"/>
+            <button ion-button style="background-color: #ff8a88;right: 30px;left: inherit;" round icon-start>
+              {{ 'LESSONS' | translate }}
+            </button>
+        </div>
+
+        <div class="menuItem item3"  (click)="itemTapped($event, 'route')" >
+            <img src="assets/img/windsurf/road.jpg"/>
+            <button ion-button style="background-color: #188ca3;" round icon-start>
+              {{ 'ROAD' | translate }}
+            </button>
+        </div>
+
+        <div class="menuItem item4"  (click)="itemTapped($event, 'previsions')" >
+            <img src="assets/img/windsurf/forecast.jpg"/>
+            <button ion-button style="background-color: #162a24;right: 30px;left: inherit;" round icon-start>
+              {{ 'FORECASTS' | translate }}
+            </button>
+        </div>
+
+        
+
+        <div class="menuItem item5"  (click)="itemTapped($event, 'maison')" >
+            <img src="assets/img/windsurf/sleep.jpg"/>
+            <button ion-button style="background-color: #385d92;" round icon-start>
+              {{ 'SLEEP' | translate }}
+            </button>
+        </div>
+
+        <div class="menuItem item6"  (click)="itemTapped($event, 'activite')" >
+            <img src="assets/img/windsurf/discover.jpg"/>
+            <button ion-button style="background-color: #ffac4a;right: 30px;left: inherit;" round icon-start>
+              {{ 'TO DISCOVER' | translate }}
+            </button>
+        </div>
+        
+</ion-content>

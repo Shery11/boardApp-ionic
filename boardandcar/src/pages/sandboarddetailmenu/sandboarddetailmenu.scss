@@ -1,0 +1,70 @@
+page-sandboarddetailmenu {
+
+	 div{
+        padding-top: 0px !important;
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+    .menuItem{
+        position: relative;
+    }
+    .menuItem button{
+      position: absolute;
+      bottom: 35px;
+      left: 30px;
+      color: white;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      font-family: CenturyGothic_Regular !important;
+    }
+    .item1{
+        z-index: 99;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 99%);
+        clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 99%);
+    }
+    .item2{
+        z-index: 88;
+        margin-top: -15%;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
+    }
+    .item3{
+        z-index: 77;
+        // previously -9
+        margin-top: -9%;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 91%);
+        clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 99%);
+    }
+    .item4{
+        z-index: 66;
+        margin-top: -15%;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
+    }
+    .item5{
+        z-index: 55;
+        margin-top: -13%;
+       
+    }
+   
+
+    .bar-buttons, .back-button, .toolbar-title {
+        color: white !important;
+    }
+    ion-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 90px 1px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: -1;
+        div{
+            font-weight: bold !important;
+        }
+    }
+
+}
